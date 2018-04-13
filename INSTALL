@@ -1,0 +1,9 @@
+Building I/OCoin
+
+See doc/readme-qt.rst for instructions on building I/OCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of I/OCoin.
+
+See doc/build-*.txt for instructions on building decoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of I/OCoin.
