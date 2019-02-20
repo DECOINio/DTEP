@@ -44,10 +44,12 @@
         <file alias="debugwindow">res/icons/debugwindow.png</file>
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
+        <file alias="arrow-down">res/icons/chevron-arrow-down.png</file>
+        <file alias="arrow-up">res/icons/chevron-arrow-up.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="splash">res/images/splash3.png</file>
+        <file alias="splash">res/images/splash.jpg</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
@@ -92,5 +94,28 @@
         <file alias="uk">locale/bitcoin_uk.qm</file>
         <file alias="zh_CN">locale/bitcoin_zh_CN.qm</file>
         <file alias="zh_TW">locale/bitcoin_zh_TW.qm</file>
+    </qresource>
+    <qresource prefix="/themes">
+        <file alias="light">res/themes/light.qss</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>res/font/Montserrat-Black.ttf</file>
+        <file>res/font/Montserrat-BlackItalic.ttf</file>
+        <file>res/font/Montserrat-Bold.ttf</file>
+        <file>res/font/Montserrat-BoldItalic.ttf</file>
+        <file>res/font/Montserrat-ExtraBold.ttf</file>
+        <file>res/font/Montserrat-ExtraBoldItalic.ttf</file>
+        <file>res/font/Montserrat-ExtraLight.ttf</file>
+        <file>res/font/Montserrat-ExtraLightItalic.ttf</file>
+        <file>res/font/Montserrat-Italic.ttf</file>
+        <file>res/font/Montserrat-Light.ttf</file>
+        <file>res/font/Montserrat-LightItalic.ttf</file>
+        <file>res/font/Montserrat-Medium.ttf</file>
+        <file>res/font/Montserrat-MediumItalic.ttf</file>
+        <file>res/font/Montserrat-Regular.ttf</file>
+        <file>res/font/Montserrat-SemiBold.ttf</file>
+        <file>res/font/Montserrat-SemiBoldItalic.ttf</file>
+        <file>res/font/Montserrat-Thin.ttf</file>
+        <file>res/font/Montserrat-ThinItalic.ttf</file>
     </qresource>
 </RCC>

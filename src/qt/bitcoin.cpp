@@ -83,11 +83,11 @@ static void InitMessage(const std::string &message)
 {
     if(splashref)
     {
-        splashref->setFixedHeight(375);
+        splashref->setFixedHeight(479);
 //        splashref->setBaseSize(400, 290);
 //        splashref->setMaximumHeight(290);
 //        splashref->setContentsMargins(0, -5000, 0, 1000);
-        splashref->showMessage(QString::fromStdString("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+message), Qt::AlignTop|Qt::AlignHCenter, QColor(255,255,255));
+        splashref->showMessage(QString::fromStdString(message+"\n"), Qt::AlignBottom|Qt::AlignHCenter, QColor(255,255,255));
         QApplication::instance()->processEvents();
     }
 }
@@ -206,6 +206,7 @@ int main(int argc, char *argv[])
     if (GetBoolArg("-splash", true) && !GetBoolArg("-min"))
     {
         splash.show();
+        splash.setAutoFillBackground(true);
         splashref = &splash;
     }
 

@@ -86,6 +86,19 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
     resize(850, 550);
     setWindowTitle(tr("DECOIN") + " - " + tr("Wallet"));
+
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-Light.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-Regular.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-Medium.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-SemiBold.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-ExtraBold.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/Montserrat-Black.ttf");
+
+    QFile styleFile(":/themes/light");
+    styleFile.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(styleFile.readAll());
+    this->setStyleSheet(styleSheet);
+
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -346,6 +359,8 @@ void BitcoinGUI::createToolBars()
 {
     QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
     toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    toolbar->setAccessibleName("topmenubar");
+    toolbar->setObjectName("topmenubar");
     toolbar->addAction(overviewAction);
     toolbar->addAction(sendCoinsAction);
     toolbar->addAction(receiveCoinsAction);
@@ -353,6 +368,8 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
+    toolbar2->setAccessibleName("topmenubar1");
+    toolbar2->setObjectName("topmenubar1");
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar2->addAction(exportAction);
 }
