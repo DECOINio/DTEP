@@ -25,6 +25,14 @@ SetCompressor /SOLID lzma
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "..\share\pixmaps\nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
+Function finishpageaction
+CreateShortcut "$desktop\DECOIN.lnk" "$INSTDIR\DECOIN-qt.exe"
+FunctionEnd
+!define MUI_FINISHPAGE_SHOWREADME ""
+!define MUI_FINISHPAGE_SHOWREADME_TEXT "Create Desktop Shortcut"
+!define MUI_FINISHPAGE_SHOWREADME_FUNCTION finishpageaction
+
+
 # Included files
 !include Sections.nsh
 !include MUI2.nsh

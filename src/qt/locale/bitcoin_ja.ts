@@ -4,12 +4,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About DECOIN</source>
-        <translation>ブラックコインについて</translation>
+        <translation>DECOINについて</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;DECOIN&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;ブラックコイン&lt;/b&gt;バージョン</translation>
+        <translation>&lt;b&gt;DECOIN&lt;/b&gt;バージョン</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -66,7 +66,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="-46"/>
         <source>These are your DECOIN addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>これは支払いを受けるためのブラックコインのアドレス。支払い管理をするのため、各送信者へ、それぞれのアドレスを伝えたほうがいいです。</translation>
+        <translation>これは支払いを受けるためのDECOINのアドレスです。支払い管理をするため、各送信者へ、それぞれのアドレスをお伝えください。</translation>
     </message>
     <message>
         <location line="+60"/>
