@@ -33,7 +33,7 @@ class CTxMemPool;
 #include "constants.h"
 
 
-static const int LAST_POW_BLOCK = 259200; // 6 months expected blocks;
+static const int LAST_POW_BLOCK = 86852;// 259200; // 6 months expected blocks;
 
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
