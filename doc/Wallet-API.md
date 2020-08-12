@@ -19,7 +19,7 @@ The configuration file is not automatically created; you can create it using you
 
 
 **Sample Decoin.conf**  
-See here: [DECOIN](doc/DECOIN.conf)
+See here: [DECOIN](DECOIN.conf)
 
 ## EndPoints 
 
